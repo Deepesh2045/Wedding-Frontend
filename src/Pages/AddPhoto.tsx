@@ -2,7 +2,6 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import {
   Box,
   Button,
-  CircularProgress,
   FormControl,
   FormHelperText,
   Grid,
@@ -20,7 +19,6 @@ import { useRef, useState } from "react";
 import { useMutation, useQueryClient } from "react-query";
 import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
-import Loading from "../Component/Loading";
 import $axios from "../lib/axios.instance";
 
 const AddPhoto = () => {
@@ -101,10 +99,9 @@ const AddPhoto = () => {
           }) => {
             let imageUrl;
             if (weddingImg) {
-             
-
               const cloudname = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
-              const uploadPreset = import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET;
+              const uploadPreset = import.meta.env
+                .VITE_CLOUDINARY_UPLOAD_PRESET;
               const data = new FormData();
               data.append("file", weddingImg);
               data.append("upload_preset", uploadPreset);
@@ -276,8 +273,16 @@ const AddPhoto = () => {
                 </Grid>
               </Grid>
 
-              <Button type="submit" variant="contained" disabled={isLoading || imageLoading} sx={{ background: "#C31356","&:hover":{background:"#000"}}}>
-                {imageLoading? "Uploading...":"Submit"}
+              <Button
+                type="submit"
+                variant="contained"
+                disabled={isLoading || imageLoading}
+                sx={{
+                  background: "#C31356",
+                  "&:hover": { background: "#000" },
+                }}
+              >
+                {imageLoading ? "Uploading..." : "Submit"}
               </Button>
             </form>
           )}
