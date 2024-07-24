@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const $axios = axios.create({
-    baseURL: "http://wedding-backend-steel.vercel.app",
+    baseURL: "https://wedding-backend-5bz7.onrender.com",
     timeout:1000,
 });
 
