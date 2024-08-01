@@ -89,7 +89,7 @@ const Home:React.FC = ()=> {
               textDecoration: 'none',
             }}
           >
-           <img src='../public/logo2.png' alt='' width={"70px"}/>
+           <img src='https://i.ibb.co/Mpsq692/logo2.png' alt='' width={"70px"}/>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -149,7 +149,7 @@ const Home:React.FC = ()=> {
             
             }}
           >
-            <img src='../logo2.png' alt='' width={"70px"} />
+            <img src='https://i.ibb.co/Mpsq692/logo2.png' alt='' width={"70px"} />
           </Typography>
           <Box sx={{ flexGrow: 1, background:"", paddingRight:"1rem", justifyContent:"end", display: { xs: 'none', md: 'flex' } }}>
             {navItems.map((item:NavItemsTypes) => (
@@ -171,7 +171,7 @@ const Home:React.FC = ()=> {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Roji Shrestha" src="/public/035.JPG" />
+                <Avatar alt="Roji Shrestha" src="https://i.ibb.co/7KrL4gw/035.jpg" />
               </IconButton>
             </Tooltip>
             <Menu

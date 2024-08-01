@@ -68,8 +68,8 @@ const AddPhoto = () => {
       return await $axios.put(`/card/edit/${cardId}`, value);
     },
     onSuccess: () => {
-      navigate("/gallery");
       queryClient.invalidateQueries("card-list")
+      navigate("/gallery");
     },
    
   });

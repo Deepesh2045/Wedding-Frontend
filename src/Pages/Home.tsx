@@ -7,7 +7,7 @@ const Home:React.FC = () => {
     <>
     <Box className="bg"  sx={{
     width: "100%",
-    background: `url("/public/bg.png") no-repeat center center`,
+    background: `url("https://i.ibb.co/tKNXTv3/bg.png") no-repeat center center`,
     backgroundSize: "cover",
     height: {xs:"92dvh",md:"88.5dvh"},
     overflow:"hidden"
@@ -21,7 +21,7 @@ const Home:React.FC = () => {
       </Box>
       </Grid>
       <Grid item md={6} sx={{background:"",height:{xs:"",md:"100dvh"},marginTop:{xs:"",md:""}}}>
-      <img src='../public/right img.png' alt='' width={"100%"} height={""}/>
+      <img src='https://i.ibb.co/rG7jKFd/right-img.png' alt='' width={"100%"} height={""}/>
       </Grid>
 
       </Grid>

@@ -65,7 +65,7 @@ export const About = () => {
         </Grid>
         <Grid item md={6} sx={{ width: "100%", height: "", background: "" }}>
           <img
-            src="/public/about-img2.PNG"
+            src="https://i.ibb.co/cL79sdF/about-img2.png"
             alt=""
             width="75%"
             height=""

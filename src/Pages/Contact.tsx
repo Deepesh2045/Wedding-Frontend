@@ -28,20 +28,8 @@ const Contact: React.FC = () => {
         }}
       >
         <Grid item md={6} xs={12} sx={{display:{xs:"none",md:"block"}}} >
-          <img src="/contact.png" alt="" width="300px"/>
-          {/* <Box sx={{textAlign:"",display:"flex",gap:"2rem",justifyContent:"center",marginTop:"8px"}}>
-           <Box> <Typography  sx={{ color: "#fff",fontWeight:"bold" }}>
-              Call Us
-            </Typography>
-            <Typography sx={{ color: "#C31356" }}>+977 9849153576</Typography>
-            </Box>
-            <Box>
-            <Typography  sx={{ color: "#fff",fontWeight:"bold" }}>
-              Location
-            </Typography>
-            <Typography sx={{ color: "#C31356" }}>Balkot, Bhaktapur, Nepal</Typography>
-            </Box>
-          </Box> */}
+          <img src="https://i.ibb.co/kQRPqYC/contact.png" alt="" width="300px"/>
+     
         </Grid>
         <Grid
           item
